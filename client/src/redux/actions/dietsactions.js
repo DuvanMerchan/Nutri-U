@@ -1,11 +1,20 @@
 import axios from "axios";
-import { filterByDiet, getAllDiets } from "../dietsSlice";
+import { filterByDiet, getAllDiets, getDietDetail } from "../dietsSlice";
 
 
-export const getDiet =()=>async (dispatch)=>{
+export const getDiets =()=>async (dispatch)=>{
     try {
         let res = await axios.get()
         dispatch(getAllDiets(res.data))
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+export const getDetail =()=>async (dispatch)=>{
+    try {
+        let res = await axios.get()
+        dispatch(getDietDetail(res.data))
     } catch (error) {
         console.log(error)
     }
