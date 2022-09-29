@@ -4,11 +4,12 @@ import { createSlice } from "@reduxjs/toolkit";
 export const dietSlice = createSlice({
     name: 'diets',
     initialState:{
-        diet:[]
+        diets:[],
+        diet:''
     },
     reducers:{
         getAllDiet: (state, action)=>{
-            state.diet = action.payload
+            state.diets = action.payload
         },
     }
 })
