@@ -17,6 +17,6 @@ export const dietSlice = createSlice({
     }
 })
 
-export const { getAllDiet } = dietSlice.actions
+export const { getAllDiet, filterByDiet } = dietSlice.actions
 
 export default dietSlice.reducer
