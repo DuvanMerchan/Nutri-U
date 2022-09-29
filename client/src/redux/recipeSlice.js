@@ -12,6 +12,9 @@ export const recipesSlice = createSlice({
         },
         getRecipeById: (state, action)=>{
             state.detail = action.payload
+        },
+        cleanDetail: (state, action)=>{
+            state.detail = ''
         }
     }
 })
