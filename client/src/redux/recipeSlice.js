@@ -14,10 +14,11 @@ export const recipesSlice = createSlice({
             state.detail = action.payload
         },
         cleanDetail: (state, action)=>{
-            state.detail = ''
+            state.detail = {}
         }
     }
 })
+
 
 export const {getAllRecipes, getRecipeById} = recipesSlice.actions
 

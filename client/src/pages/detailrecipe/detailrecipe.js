@@ -6,6 +6,7 @@ import style from './detail.module.css'
 
 export default function DetailRecipe(){
     
+    
     return(
         <div>
             <nav/>
