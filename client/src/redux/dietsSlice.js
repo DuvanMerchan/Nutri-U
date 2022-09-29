@@ -11,6 +11,9 @@ export const dietSlice = createSlice({
         getAllDiet: (state, action)=>{
             state.diets = action.payload
         },
+        filterByDiet:  (state, action)=>{
+            state.diet = action.payload
+        },
     }
 })
 
