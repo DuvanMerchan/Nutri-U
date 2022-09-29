@@ -5,11 +5,15 @@ export const dietSlice = createSlice({
     name: 'diets',
     initialState:{
         diets:[],
-        diet:''
+        diet:'',
+        detail: {},
     },
     reducers:{
-        getAllDiet: (state, action)=>{
+        getAllDiets: (state, action)=>{
             state.diets = action.payload
+        },
+        getDietDetail: (state, action)=>{
+            state.detail = action.payload
         },
         filterByDiet:  (state, action)=>{
             state.diet = action.payload
@@ -17,6 +21,6 @@ export const dietSlice = createSlice({
     }
 })
 
-export const { getAllDiet, filterByDiet } = dietSlice.actions
+export const { getAllDiets, filterByDiet, getDietDetail } = dietSlice.actions
 
 export default dietSlice.reducer
